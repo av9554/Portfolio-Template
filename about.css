@@ -1,0 +1,144 @@
+body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   background: linear-gradient(135deg, #FF4B2B, #FF416C); /* Modern gradient for the background */
+   color: #333;
+   cursor: url('/res/images/user-img/pointer.png');
+}
+
+.container {
+   max-width: 800px;
+   margin: 0 auto;
+   padding: 20px;
+}
+
+.card {
+   background: linear-gradient(135deg, rgba(255, 209, 0, 0.8), rgba(255, 105, 135, 0.8)); /* Modern gradient for the card */
+   padding: 20px;
+   margin-top: 20px;
+   border: 1px solid #333;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+h1{
+   border-bottom: 2px solid #CC0985;
+}
+h2{
+   border-bottom: 1px solid #FF0000;
+}
+h1, h2 {
+   text-align: center;
+   color: #FFF9C4; /* Soft Yellow */
+   text-transform: uppercase;
+   padding: 5px;
+}
+
+footer p, a {
+   line-height: 1.6;
+   font-size: 1.1em;
+   font-style: oblique;
+font-variant: petite-caps;
+   color: #8AABFF;
+}
+
+.social-links {
+   display: flex;
+   justify-content: space-around;
+   margin-top: 20px;
+}
+
+.social-links a,
+footer a {
+   text-decoration: none;
+   color: #fff;
+   background-color: #333;
+   padding: 5px;
+   border-radius: 5px;
+   transition: background-color 0.3s ease;
+   font-size: .8em;
+}
+
+.social-links a:hover {
+   background-color: #555;
+}
+
+.profile-info {
+   text-align: center;
+   margin-top: 20px;
+}
+
+.profile-info img {
+   width: 140px;
+   height: 150px;
+   border-radius: 50%;
+   border: 5px solid #ddd;
+   margin-bottom: 20px;
+   filter: drop-shadow(4px 6px 8px #000000);
+}
+
+.profile-info h2 {
+   margin-bottom: 10px;
+   color: #FFFFFF;
+}
+
+.profile-info p {
+   padding: 5px;
+   font-size: 1em;
+   font-family: 'Times New Roman', Times, serif;
+}
+
+.btn {
+   padding: 5px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.btn button {
+   all: unset;
+   padding: 10px 20px;
+   border-radius: 25px;
+   color: #FFFFFF;
+   background: #0CB1AD;
+}
+
+footer {
+   width: 100%;
+   height: 150px;
+   background: #000;
+   color: #FFA904;
+   text-align: center;
+   bottom: 0;
+}
+
+footer p a {
+   background: none;
+   text-decoration: underline;
+   text-decoration-color: #E9B2FF;
+}
+
+footer h3 {
+   text-align: start;
+   margin-left: 10px;
+   margin-top: 5px;
+   padding: 5px;
+}
+
+.qlink ul {
+   display: grid;
+   place-items: start;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 5px;
+}
+
+.qlink a {
+   background: #069CE3DB;
+   color: white;
+   text-decoration: underline;
+   text-decoration-color: #FF0E0E;
+}
+
+.qlink ul li {
+   list-style: none;
+}

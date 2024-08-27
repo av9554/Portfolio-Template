@@ -1,0 +1,154 @@
+*{
+   box-sizing: border-box;
+}
+
+
+/* Global styles */
+body {
+   background-color: #F0F0F0; /* Light background for better readability */
+   color: #333333; /* Darker text color for better contrast */
+   cursor: url('/res/images/user-img/pointer.png'), auto;
+   scroll-behavior: smooth;
+   height: 100vh;
+   padding: 0;
+   margin: 0;
+   font-family: 'Arial', sans-serif; /* Changed to a more modern sans-serif font */
+}
+
+/* Main content */
+
+main {
+   width: 100%;
+   padding: 20px;
+   margin: 0 auto;
+   max-width: 1200px; /* Keep the content centered and manageable in width */
+}
+
+main h1 {
+   display: inline-block;
+   font-family: 'Times New Roman', Times, serif;
+   color: #4B1111; /* Dark red for contrast */
+   border-bottom: 3px solid #FF008B; /* Thicker line for emphasis */
+   font-size: 2.5rem; /* Increased font size for better readability */
+   margin-bottom: 20px;
+   text-align: center;
+}
+
+/* Card component */
+.card {
+   padding: 30px;
+   margin-top: 30px;
+   background: #FFFFFF; /* White background for high contrast */
+   border-radius: 10px;
+   display: grid;
+   grid-template-columns: 1fr;
+   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Softer shadow for a modern, clean look */
+   border: 1px solid #E0E0E0;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+   text-align: left;
+}
+
+.card:hover {
+   transform: translateY(-5px); /* Slight hover effect for interactivity */
+   box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+   font-size: 1.8rem;
+   color: #333333; /* Dark text color for readability */
+   margin-bottom: 15px;
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+
+.card p {
+   font-size: 1.1rem;
+   color: #555555; /* Medium gray for body text */
+   padding: 5px 0;
+   font-family: 'Arial', sans-serif;
+   line-height: 1.7; /* Increased line height for readability */
+}
+
+/* Button styling */
+.btn {
+   padding: 5px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 20px;
+}
+
+.btn button {
+   all: unset;
+   padding: 10px 20px;
+   border-radius: 25px;
+   color: #FFFFFF;
+   background: #089661;
+   cursor: pointer;
+   transition: background 0.3s ease;
+}
+
+.btn button:hover {
+   background-color: #D10672;
+   outline: none;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+   .btn {
+      height: 150px;
+   }
+.btn button {
+   cursor: auto;
+}
+}
+
+/* Ensure no other styles are causing overflow issues */
+body {
+   overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+/* Footer styling */
+#footer{
+   display: none;
+}
+footer {
+   height: 40px;
+   background-color: #292929; /* Dark background for footer */
+   color: #FFA904;
+   text-align: center;
+   position: fixed;
+   width: 100%;
+   bottom: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer a {
+   text-decoration: none;
+   color: #FFFFFF;
+   padding: 0 10px;
+   font-size: 1.1rem;
+   font-weight: bold;
+}
+
+footer p {
+  
+   font-size: 1rem;
+   font-family: 'Arial', sans-serif;
+}
+
+/* Animation for sliding effect */
+.slide {
+   animation: slide 0.2s forwards;
+}
+
+@keyframes slide {
+   from {
+      transform: translateX(-50%);
+   }
+   to {
+      transform: translateX(0);
+   }
+}
