@@ -16,8 +16,8 @@ if(header){
    header.style.display = 'flex'
 }
 }
-setTimeout(hideloader, 1000);
-//hideloader();
+//setTimeout(hideloader, 1000);
+hideloader();
 }
 );
 
